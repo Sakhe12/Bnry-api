@@ -2,7 +2,7 @@
     <div>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">News Daily</a>
+    <a class="navbar-brand title" href="#">News Daily<i class="bi bi-newspaper"></i></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -32,5 +32,8 @@ export default {
 <style >
     .txt {
         text-decoration: none;
+    }
+    .title {
+      font-family: 'Pacifico', cursive;
     }
 </style>
