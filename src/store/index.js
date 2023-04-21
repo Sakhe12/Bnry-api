@@ -1,7 +1,7 @@
 import { createStore } from 'vuex'
 import axios from 'axios'
 
-const Bnry = "https://newsapi.org/v2/everything?q=tesla&from=2023-03-20&sortBy=publishedAt&apiKey=84616c66f1224da88c20f8860d3d296c"
+const Bnry = "http://localhost:3050/"
 
 export default createStore({
   state: {
@@ -17,8 +17,10 @@ export default createStore({
   actions: {
     async fetchArticles(context) {
       const res = await axios.get(`${Bnry}`);
-      if (res.data !== undefined){
-        context.commit('setTeslas', res.data.articles)
+      const output = await res.data.articles;
+      console.log(res.data.articles)
+      if (output){
+        context.commit('setTeslas', output)
       } else {
         context.commit('setTeslas', [])
       }

@@ -6,7 +6,7 @@
 
 <script>
 
-import home from "../components/Home.vue";
+import home from "../components/About.vue";
 export default {
   components: {
     home
