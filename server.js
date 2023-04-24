@@ -23,7 +23,21 @@ app.get('/',(req, res) => {
     // All options are optional
     news.v2.everything({
         sources: 'bbc-news,the-verge',
-        q: 'bitcoin',
+        q: '',
+        language: 'en',
+    }).then(response => {
+        console.log(response);
+        res.send(response)
+    });
+    
+});
+
+app.get('/searching/:value',(req, res) => {
+    const NewsAPI = require('newsapi');
+    const news = new NewsAPI('84616c66f1224da88c20f8860d3d296c');
+    news.v2.everything({
+        sources: 'bbc-news,the-verge',
+        q: `${req.params.value}`,
         language: 'en',
     }).then(response => {
         console.log(response);
