@@ -69,8 +69,9 @@ export default {
 }
 
 form {
-    margin-top: 1rem;
-    margin-left: 150%;
+    margin-top: 2rem;
+    margin-left: 180%;
+    margin: 0px;
 }
 input {
     width: 150px;
