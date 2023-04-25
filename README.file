@@ -1,0 +1,9 @@
+installed node modules on the backend and then installed the newsApi, then I connected the api with my api.
+
+Posted the backend on Render as I did not want to keep on first running backend in order to view my articles.
+
+Connected the backend with axios on the store.
+
+installed bootstrap and bootstrap icons
+
+Made use of CSS and media queries for some of the responsiveness as well as styling.
